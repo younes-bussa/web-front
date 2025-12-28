@@ -49,6 +49,7 @@ if (demandeForm) {
 }
 
 /* RESET & BASE */
+
 *,
 *::before,
 *::after {
@@ -467,4 +468,9 @@ textarea:focus {
   .form-row {
     grid-template-columns: 1fr;
   }
+}
+
+.navbar.hide {
+  transform: translateY(-100%);
+  transition: transform .3s ease;
 }

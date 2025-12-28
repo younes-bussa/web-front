@@ -127,3 +127,18 @@ if (demandeForm) {
     }
   });
 }
+
+let lastScroll = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+
+  if (currentScroll > lastScroll && currentScroll > 80) {
+    navbar.classList.add("hide");      // on descend → cacher
+  } else {
+    navbar.classList.remove("hide");   // on remonte → réafficher
+  }
+
+  lastScroll = currentScroll;
+});
