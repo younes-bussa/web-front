@@ -7,6 +7,7 @@
     <title>Plombier Clermont-Ferrand – Dépannage, fuites, chauffe-eau | miplomberie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Plombier à Clermont-Ferrand. Dépannage urgent, fuite d'eau, débouchage, chauffe-eau, chaudière. Intervention rapide 7j/7. Contact : 06 68 45 44 69.">
+    <meta name="google-site-verification" content="CODE_GSC">
     <link rel="canonical" href="https://miplomberie.com/">
 
     <link rel="stylesheet" href="style.css">
@@ -160,10 +161,21 @@
             <input type="text" id="nom" name="nom" required>
           </div>
 
+          <!-- <div class="form-row"> -->
+          <!--   <div class="form-group"> -->
+          <!--     <label for="email">Email *</label> -->
+          <!--     <input type="email" id="email" name="email" required> -->
+          <!--   </div> -->
+
+          <!--   <div class="form-group"> -->
+          <!--     <label for="telephone">Téléphone</label> -->
+          <!--     <input type="tel" id="telephone" name="telephone"> -->
+          <!--   </div> -->
+          <!-- </div> -->
           <div class="form-row">
             <div class="form-group">
-              <label for="email">Email *</label>
-              <input type="email" id="email" name="email" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
             </div>
 
             <div class="form-group">
@@ -171,12 +183,33 @@
               <input type="tel" id="telephone" name="telephone">
             </div>
           </div>
-
+          
           <div class="form-group">
             <label for="description">Description de votre besoin *</label>
             <textarea id="description" name="description" rows="4" required></textarea>
           </div>
           <button type="submit" class="btn-primary" id="submitBtn">Envoyer la demande</button>
+
+          <script>
+            const email = document.getElementById('email');
+            const tel = document.getElementById('telephone');
+            const form = email.closest('form');
+
+            function validate() {
+                const need = !email.value.trim() && !tel.value.trim();
+                email.setCustomValidity(need ? "Renseignez email ou téléphone." : "");
+                tel.setCustomValidity(need ? "Renseignez email ou téléphone." : "");
+            }
+
+            email.addEventListener("input", validate);
+            tel.addEventListener("input", validate);
+
+            form.addEventListener("submit", e => {
+                validate();
+                if (!form.checkValidity()) e.preventDefault();
+            });
+          </script>
+          
           <p id="demandeStatus" class="form-status"></p>
         </form>
       </div>
@@ -203,4 +236,5 @@
 
     <script src="script.js"></script>
   </body>
+
 </html>
