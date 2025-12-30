@@ -6,10 +6,54 @@
     <meta name="robots" content="index, follow">
     <title>Plombier Clermont-Ferrand – Dépannage, fuites, chauffe-eau | miplomberie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plombier à Clermont-Ferrand. Dépannage urgent, fuite d'eau, débouchage, chauffe-eau, chaudière. Intervention rapide 7j/7. Contact : 06 68 45 44 69.">
-    <meta name="google-site-verification" content="GlDfiKhiDY3KC5aij0awsn-aGm-CbqAZmEWaNw9tOBM" />
-    <link rel="canonical" href="https://miplomberie.com/">
+    <meta name="description" content="Plombier à Clermont-Ferrand. Dépannage urgent 24h/24 et 7j/7 pour les fuites d'eau et les urgences, débouchage, chauffe-eau, chaudière. Interventions classiques de 8h à 20h. Contact : 06 68 45 44 69.">
 
+    <meta name="google-site-verification" content="GlDfiKhiDY3KC5aij0awsn-aGm-CbqAZmEWaNw9tOBM" />
+
+    <script type="application/ld+json">
+      {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "name": "miplomberie",
+          "image": "https://miplomberie.com/images/depannage-fuite.png",
+          "@id": "https://miplomberie.com/",
+          "url": "https://miplomberie.com/",
+          "telephone": "+33668454469",
+          "description": "Plombier à Clermont-Ferrand. Dépannage urgent 24h/24 et 7j/7 pour les urgences, interventions classiques sur rendez-vous de 8h à 20h dans un rayon de 30 km.",
+          "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Clermont-Ferrand",
+              "postalCode": "63000",
+              "addressCountry": "FR"
+          },
+          "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 45.7772,
+                  "longitude": 3.0870
+              },
+              "geoRadius": 30000
+          },
+          "openingHoursSpecification": [{
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                  "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"
+              ],
+              "opens": "08:00",
+              "closes": "20:00"
+          }],
+          "serviceType": [
+              "Dépannage plomberie",
+              "Réparation de fuites",
+              "Débouchage canalisation",
+              "Installation chauffe-eau",
+              "Installation chaudière",
+              "Climatisation"
+          ]
+      }
+    </script>
+    <link rel="canonical" href="https://miplomberie.com/">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -32,11 +76,15 @@
     <section id="home" class="section hero">
       <div class="container hero-content">
         <div class="hero-text">
-          <h1>Plombier à Clermont-Ferrand – intervention rapide et fiable</h1>
+          <h1>Plombier à Clermont-Ferrand – dépannage rapide, fuite d’eau, débouchage et chauffe-eau</h1>
           <p>
-            Dépannage, débouchage, chauffe-eau, installation et rénovation.
-            Intervention 7j/7 sur rendez-vous, devis clair avant chaque travaux.
+            Plombier à Clermont-Ferrand, j'interviens pour le dépannage d'urgence,
+            la réparation de fuites d'eau, le débouchage de canalisations, ainsi que
+            l'installation et le remplacement de chauffe-eau, chaudières et climatisations.
+            Les urgences sont prises en charge 24h/24 et 7j/7, les interventions classiques se font
+            sur rendez-vous de 8h à 20h dans un rayon de 30 km autour de Clermont-Ferrand.
           </p>
+          
           <div class="hero-actions">
             <a href="#demande" class="btn-primary">Demander un devis</a>
             <div class="hero-phone">
@@ -47,11 +95,20 @@
 
         <div class="hero-card">
           <h2>Urgence plomberie</h2>
-          <p><strong>Téléphone :</strong> 06 68 45 44 69</p>
-          <p><strong>Zone :</strong> Clermont-Ferrand</p>
-          <p><strong>Horaire :</strong>24/7</p>
+          <p><strong>Téléphone :</strong> <a href="tel:+33668454469">06 68 45 44 69</a></p>
+          <p><strong>Zone :</strong> Clermont-Ferrand et 30 km autour</p>
+          <p><strong>Urgences :</strong> 24h/24 – 7j/7</p>
+          <p><strong>Interventions classiques :</strong> de 8h à 20h sur rendez-vous</p>
           <p><strong>Engagement :</strong> intervention rapide, travail propre.</p>
         </div>
+
+        <!-- <div class="hero-card"> -->
+        <!--   <h2>Urgence plomberie</h2> -->
+        <!--   <p><strong>Téléphone :</strong> 06 68 45 44 69</p> -->
+        <!--   <p><strong>Zone :</strong> Clermont-Ferrand</p> -->
+        <!--   <p><strong>Horaire :</strong>24/7</p> -->
+        <!--   <p><strong>Engagement :</strong> intervention rapide, travail propre.</p> -->
+        <!-- </div> -->
       </div>
     </section>
 
@@ -86,7 +143,9 @@
         <div class="services-grid">
           <!-- Service 1 -->
           <article class="service-card">
-            <img src="images/depannage-fuite.png" alt="Dépannage et réparation de fuites" class="service-img">
+            <img src="images/depannage-fuite.png"
+                 alt="Dépannage fuite d'eau plombier à Clermont-Ferrand"
+                 class="service-img">
             <div class="service-text">
               <h3>Dépannage & fuites</h3>
               <p>
@@ -98,7 +157,9 @@
 
           <!-- Service 2 -->
           <article class="service-card">
-            <img src="images/debouchage.png" alt="Débouchage canalisation et WC" class="service-img">
+            <img src="images/debouchage.png"
+                 alt="Débouchage canalisation et WC à Clermont-Ferrand"
+                 class="service-img">
             <div class="service-text">
               <h3>Débouchage</h3>
               <p>
@@ -110,7 +171,9 @@
 
           <!-- Service 3 -->
           <article class="service-card">
-            <img src="images/chauffe-eau.png" alt="Installation et dépannage de chauffe-eau" class="service-img">
+            <img src="images/chauffe-eau.png"
+                 alt="Installation et dépannage chauffe-eau Clermont-Ferrand"
+                 class="service-img">
             <div class="service-text">
               <h3>Chauffe-eau</h3>
               <p>
@@ -224,12 +287,30 @@
           <p><strong>Téléphone :</strong> 06 68 45 44 69</p>
           <p><strong>Email :</strong> miplomberie@outlook.com</p>
         </div>
+      </div>
     </section>
-    
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container">
+        <h2 class="section-title">Questions fréquentes sur la plomberie à Clermont-Ferrand</h2>
+
+        <h3>Intervenez-vous en urgence pour une fuite d’eau ?</h3>
+        <p>Oui, j’interviens rapidement à Clermont-Ferrand et dans un rayon de 30 km pour toute fuite d’eau, dégât des eaux ou canalisation bouchée.</p>
+
+        <h3>Dans quels secteurs de Clermont-Ferrand vous déplacez-vous ?</h3>
+        <p>Je couvre Clermont-Ferrand centre, Montferrand, La Pardieu, Les Vergnes, Saint-Jacques et les communes voisines (Aubière, Cournon, Beaumont, Gerzat...).</p>
+
+        <h3>Proposez-vous des devis gratuits ?</h3>
+        <p>Oui, le devis est clair et communiqué avant chaque intervention. Aucun travaux n’est réalisé sans accord.</p>
+      </div>
+    </section>
+
     <!-- PIED DE PAGE -->
     <footer class="footer">
       <div class="container footer-content">
         <p><strong>N° SIRET :</strong> 921 150 025</p>
+        <p>Plombier à Clermont-Ferrand (63000) – Intervention 30 km autour.</p>
         <p>© <span id="year"></span> miplomberie – Tous droits réservés.</p>
       </div>
     </footer>
